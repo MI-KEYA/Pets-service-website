@@ -36,9 +36,14 @@
     <script src="https://kit.fontawesome.com/0da645a26e.js" crossorigin="anonymous"></script>
 
     <style>
-        
-        .display-block{
+        .display-block {
             display: block;
+        }
+        .font-sora{
+            font-family: Sora;
+        }
+        .font-adlam{
+            font-family: ADlaM Display;
         }
     </style>
 </head>
@@ -48,11 +53,13 @@
     <main>
         <!-- Header section -->
         <header>
-            <nav class="grid grid-cols-3 items-center bg-[#FFF9F4] px-10 lg:px-20 py-5">
+            <!-- Navber -->
+            <nav class="font-sora grid grid-cols-3 items-center bg-[#FFF9F4] px-5 lg:px-28 py-5 mb-10 lg:mb-28">
                 <!-- logo div -->
                 <div class="flex items-center gap-3">
                     <img src="c1-assets/logo-header.png">
-                    <h3 class="hidden lg:display-block lg:flex font-Sora text-2xl">Browse<span class="text-yellow-300">4</span>Pets</h3>
+                    <h3 class="hidden lg:display-block lg:flex font-Sora text-2xl">Browse<span
+                            class="text-yellow-300">4</span>Pets</h3>
 
                 </div>
                 <!-- link div -->
@@ -67,15 +74,34 @@
                 <div class="hidden lg:display-block lg:flex gap-5 justify-center items-center">
                     <i class="fa-solid fa-bell fill-none"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <button class="border-yellow-400 text-xl rounded-lg px-7 py-2">Login</button>
+                    <button class=" border-2 border-yellow-400 text-xl rounded-lg px-7 py-2">Login</button>
                     <button class="bg-yellow-400 text-xl rounded-lg px-7 py-2">Register</button>
 
                 </div>
                 <div class="lg:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                
+
             </nav>
+            <!-- Hero-section -->
+            <section>
+                <div class="px-5 lg:px-28">
+                    <!-- text-content -->
+                    <div class="lg:absolute">
+                        <h1 class=" font-bold text-3xl lg:text-5xl font-adlam mb-5">Pamper Your Pet,<br> Because They Deserve<br> the Best</h1>
+                        <p class="text-gray-500 text-xl font-sora mb-5">Discover a world of treats, toys, and essentials handpicked for<br>
+                             your furry friends. Shop now
+                            and make tails wag with joy!
+                        </p>
+                        <button class="bg-yellow-400 text-xl rounded-lg px-7 py-2">Find a Pet</button>
+                    </div>
+                    <!-- image-content -->
+                     <div>
+                        <img src="c1-assets/cat-big.png">
+                     </div>
+                </div>
+            </section> 
+
         </header>
     </main>
 
